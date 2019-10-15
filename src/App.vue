@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+      Name: <input v-model="name" type="text">
+      <add-com :name="name" :initialEnthusiasm="5" />
+    <!-- <router-view/> -->
   </div>
 </template>
 
-<script>
-export default {
-  name: 'App'
+<script lang="ts">
+import AddCom from '@/components/AddCom.vue';
+import { Component, Prop, Vue } from 'vue-property-decorator';
+ 
+@Component({
+  components:{
+    AddCom,
+  },
+})
+export default class App extends Vue {
+  name = 'world'
 }
 </script>
 

@@ -1,5 +1,10 @@
 <template>
-  <div class="hello-wrap">加减乘除</div>
+  <div class="hello-wrap">加减乘除
+    <div>Hello {{name}}{{exclamationMarks}}</div>
+    <button @click="decrement">-</button>
+    <button @click="increment">+</button>
+  </div>
+
 </template>
 
 <script lang="ts">
