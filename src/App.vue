@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-      Name: <input v-model="name" type="text">
-      <add-com :name="name" :initialEnthusiasm="5" />
-    <!-- <router-view/> -->
+    <router-view/>
   </div>
 </template>
 
